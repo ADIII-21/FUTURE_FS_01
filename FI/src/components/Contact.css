@@ -1,0 +1,19 @@
+/* Contact.css - minimal placeholder to resolve import error */
+.contact-form { margin-top: 2rem; }
+.send { background: #7c3aed; color: #fff; border: none; padding: 0.7em 1.5em; border-radius: 6px; cursor: pointer; font-weight: 600; transition: background 0.2s; }
+.send:hover { background: #5b21b6; }
+.form-status { margin-top: 1em; color: #16a34a; font-weight: 500; }
+.contact-icon { margin: 0 0.5em; display: inline-block; }
+.footer-note {
+  margin-top: 2.2rem;
+  color: #b3e0ffcc;
+  font-size: 1rem;
+  text-align: center;
+  z-index: 2;
+  position: relative;
+}
+.app-container.light .footer-note {
+  color: #181824;
+  font-weight: 700;
+  font-size: 1.13rem;
+}

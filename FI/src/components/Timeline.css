@@ -1,0 +1,119 @@
+.timeline-section {
+  background: rgba(24, 24, 36, 0.92);
+  border-radius: 1.2rem;
+  box-shadow: 0 2px 16px 0 #b3e0ff33;
+  padding: 2.5rem 2rem;
+  margin: 2.5rem auto;
+  max-width: 900px;
+  text-align: center;
+}
+.timeline {
+  position: relative;
+  margin: 2.5rem 0 1rem 0;
+  padding-left: 0.5rem;
+}
+.timeline-line {
+  position: absolute;
+  left: 32px;
+  top: 0;
+  width: 4px;
+  height: 100%;
+  background: linear-gradient(180deg, #b3e0ff 0%, #7c3aed 100%);
+  border-radius: 2px;
+  z-index: 0;
+}
+.timeline-item {
+  display: flex;
+  align-items: flex-start;
+  margin-bottom: 2.5rem;
+  position: relative;
+  z-index: 1;
+}
+.timeline-dot {
+  width: 24px;
+  height: 24px;
+  background: #b3e0ff;
+  border: 4px solid #232946;
+  border-radius: 50%;
+  margin-right: 1.5rem;
+  box-shadow: 0 0 12px #b3e0ff99;
+  position: relative;
+  z-index: 2;
+  transition: background 0.3s;
+}
+.timeline-item:hover .timeline-dot {
+  background: #7c3aed;
+}
+.timeline-content {
+  background: #181824;
+  border-radius: 1rem;
+  padding: 1.2rem 2rem;
+  box-shadow: 0 0 12px #b3e0ff22;
+  text-align: left;
+  min-width: 220px;
+  flex: 1;
+  transition: box-shadow 0.2s, background 0.2s;
+}
+.timeline-year {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #b3e0ff;
+}
+.timeline-title {
+  font-size: 1.3rem;
+  font-weight: 800;
+  margin: 0.2rem 0 0.1rem 0;
+  color: #ededed;
+}
+.timeline-org {
+  font-size: 1rem;
+  color: #7c3aed;
+  font-weight: 600;
+}
+.timeline-desc {
+  font-size: 1rem;
+  color: #ededed;
+  margin-top: 0.5rem;
+}
+.app-container.light .timeline-section {
+  background: rgba(255,255,255,0.96);
+  color: #232946;
+  box-shadow: 0 2px 16px 0 #a0bfff33;
+}
+.app-container.light .timeline-content {
+  background: #e0e7ff;
+  color: #232946;
+  box-shadow: 0 0 10px #a0bfff22;
+}
+.app-container.light .timeline-dot {
+  background: #7c3aed;
+  border: 4px solid #e0e7ff;
+}
+.app-container.light .timeline-year {
+  color: #7c3aed;
+}
+.app-container.light .timeline-title {
+  color: #232946;
+}
+.app-container.light .timeline-org {
+  color: #b3e0ff;
+}
+.app-container.light .timeline-desc {
+  color: #232946;
+}
+@media (max-width: 600px) {
+  .timeline-item {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .timeline-content {
+    padding: 1rem 1rem;
+    min-width: 0;
+  }
+  .timeline-line {
+    left: 16px;
+  }
+  .timeline-dot {
+    margin-bottom: 0.5rem;
+  }
+}

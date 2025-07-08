@@ -1,0 +1,13 @@
+.typing-highlight {
+  color: #7c3aed;
+  font-weight: bold;
+}
+.typing-cursor {
+  display: inline-block;
+  width: 1ch;
+  animation: blink 1s steps(1) infinite;
+}
+@keyframes blink {
+  0%, 50% { opacity: 1; }
+  51%, 100% { opacity: 0; }
+}
