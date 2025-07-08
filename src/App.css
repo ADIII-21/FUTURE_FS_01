@@ -741,3 +741,128 @@ input:focus, textarea:focus {
 .app-container.light .contact-list a:hover {
   color: #b3e0ff;
 }
+@media screen and (max-width: 768px) {
+  html, body {
+    overflow-x: hidden;
+    width: 100%;
+  }
+
+  .navbar {
+    flex-direction: row; /* <-- Keep navbar horizontal */
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0.8rem 1rem;
+  }
+
+  .nav-links {
+    flex-direction: row; /* <-- Keep nav items in a line */
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0.5rem 0;
+  }
+
+  .hero {
+    padding-top: 100px;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    text-align: center;
+  }
+
+  .hero .futuristic {
+    font-size: 1.4rem;
+    white-space: normal;
+    word-break: break-word;
+  }
+
+  .hero-profile-pic {
+    margin-bottom: 1rem;
+  }
+
+  .about-section {
+    padding: 1.5rem;
+  }
+
+  .Portfolio-content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-form form input,
+  .contact-form form textarea {
+    width: 100%;
+  }
+
+  .contact-icon {
+    margin: 0.5rem;
+  }
+
+  .toggle-track {
+    scale: 0.85;
+  }
+
+  .scroll-to-top {
+    right: 1rem;
+    bottom: 1rem;
+    font-size: 1.2rem;
+    padding: 0.4rem 0.6rem;
+  }
+}
+.navbar {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0.5rem;
+}
+
+.nav-links {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.nav-links li a {
+  font-size: 0.9rem;
+  padding: 0.2rem 0.6rem;
+}
+.navbar {
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0.8rem 1rem;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  gap: 0.5rem;
+}
+
+.nav-links {
+  flex-direction: row;
+  display: flex;
+  flex-wrap: nowrap;
+  gap: 0.8rem;
+  justify-content: center;
+  align-items: center;
+  overflow-x: auto;
+  white-space: nowrap;
+}
+
+.nav-links li a {
+  font-size: 0.9rem;
+  padding: 0.2rem 0.6rem;
+}
+.nav-links::-webkit-scrollbar {
+  display: none;
+}
+.nav-links {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
