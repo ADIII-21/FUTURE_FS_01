@@ -4,7 +4,7 @@ import profilePic from '../planet111.jpg'
 const TYPING_WORDS = [
   'Aditya Gupta',
   'A Web Developer',
-  'A Software Engineer',
+  'A Future Software Engineer',
 ]
 
 export default function Hero() {
